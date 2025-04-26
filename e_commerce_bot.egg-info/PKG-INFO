@@ -3,5 +3,8 @@ Name: e-commerce-bot
 Version: 0.0.1
 Author: shilpa
 Author-email: shilpa.ingole@gmail.com
+Requires-Dist: langchain_astradb
+Requires-Dist: langchain
 Dynamic: author
 Dynamic: author-email
+Dynamic: requires-dist
