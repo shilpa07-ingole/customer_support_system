@@ -1,5 +1,6 @@
 langchain_astradb
 langchain_community
 pandas
+langchain_core
 
 -e .
