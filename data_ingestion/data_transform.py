@@ -1,5 +1,7 @@
 import pandas as pd
-from langchain_core.documents import Document
+#from langchain_core.documents import Document
+from langchain.schema import Document
+
 
 # code for converting data
 class data_converter:
