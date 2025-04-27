@@ -32,7 +32,8 @@ class data_converter:
             }
             doc=Document(page_content=entry["product_review"],metadata=metadata)
             docs.append(doc)
-            print(docs[0])
+            #print(docs[0])
+        return docs
 
         
 
