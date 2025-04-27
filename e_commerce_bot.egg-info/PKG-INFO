@@ -1,10 +1,12 @@
-Metadata-Version: 2.4
+Metadata-Version: 2.1
 Name: e-commerce-bot
 Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
 Author: shilpa
 Author-email: shilpa.ingole@gmail.com
-Requires-Dist: langchain_astradb
-Requires-Dist: langchain
-Dynamic: author
-Dynamic: author-email
-Dynamic: requires-dist
+License: UNKNOWN
+Platform: UNKNOWN
+
+UNKNOWN
+

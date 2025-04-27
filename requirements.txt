@@ -1,7 +1,13 @@
 langchain_astradb
 langchain_community
 pandas
+langchain_google_genai
+uvicorn
+python-multipart
+jinja2
+python-dotenv 
 langchain_core
 langchain
+fastapi
 
 -e .

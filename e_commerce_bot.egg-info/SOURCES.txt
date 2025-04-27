@@ -1,8 +1,11 @@
 README.md
 setup.py
+config/__init__.py
+config/config_loader.py
 data_ingestion/__init__.py
 data_ingestion/data_ingest.py
 data_ingestion/data_transform.py
+data_ingestion/ingestion.pipeline.py
 e_commerce_bot.egg-info/PKG-INFO
 e_commerce_bot.egg-info/SOURCES.txt
 e_commerce_bot.egg-info/dependency_links.txt

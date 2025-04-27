@@ -46,9 +46,9 @@ class ingest_data:
 
 if __name__=='__main__':
     ingest=ingest_data()
-    vstore,inserted_id=ingest.data_ingestion(None)
-    print(f"inserted Id:{inserted_id}")
-    #result = vstore.similarity_search("can you provide me the low budget headphone")
-    #for res in result:
-     #   print(f"result is {res.page_content}, {res.metadata})
+    vstore=ingest.data_ingestion("Not None")
+    #print(f"inserted Id:{inserted_id}")
+    result = vstore.similarity_search("can you provide me the low budget headphone")
+    for res in result:
+        print(f"result is {res.page_content}, {res.metadata}")
     
