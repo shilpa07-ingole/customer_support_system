@@ -28,7 +28,7 @@ class ModelLoader:
         """
         print("Loading Embedding model")
         model_name=self.config["embedding_model"]["model_name"]
-        return GoogleGenerativeAIEmbeddings(model=model_name)
+        return GoogleGenerativeAIEmbeddings(model=model_name,GEMINI_API_KEY="AIzaSyCxczsBSI1ydYmdXfPZoQMnPuURA6RBRaE")
 
     def load_llm(self):
         """
