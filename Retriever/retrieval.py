@@ -19,7 +19,7 @@ class Retriever:
          
         load_dotenv()
          
-        required_vars = ["GOOGLE_API_KEY", "ASTRA_DB_API_ENDPOINT", "ASTRA_DB_APPLICATION_TOKEN", "ASTRA_DB_KEYSPACE"]
+        required_vars = ["GEMINI_API_KEY", "ASTRA_DB_API_ENDPOINT", "ASTRA_DB_APPLICATION_TOKEN", "ASTRA_DB_KEYSPACE"]
         
         missing_vars = [var for var in required_vars if os.getenv(var) is None]
         
@@ -31,7 +31,7 @@ class Retriever:
         os.environ["ASTRA_DB_APPLICATION_TOKEN"]="AstraCS:PjuJqXrnuhIOlkqjIrQzGHiz:1813b04b2c2a747fa20940cc27e09850ecabcc3ee61e84ad3deeb44ca4c62862"
         os.environ["ASTRA_DB_KEYSPACE"]="default_keyspace"
 
-        self.google_api_key = os.getenv("GOOGLE_API_KEY")
+        self.google_api_key = os.getenv("GEMINI_API_KEY")
         self.db_api_endpoint = os.getenv("ASTRA_DB_API_ENDPOINT")
         self.db_application_token = os.getenv("ASTRA_DB_APPLICATION_TOKEN")
         self.db_keyspace = os.getenv("ASTRA_DB_KEYSPACE")

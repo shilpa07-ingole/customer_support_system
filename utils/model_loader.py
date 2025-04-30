@@ -17,7 +17,7 @@ class ModelLoader:
         """
         Validate necessary environment variables.
         """
-        required_vars = ["GOOGLE_API_KEY"]
+        required_vars = ["GEMINI_API_KEY"]
         missing_vars = [var for var in required_vars if not os.getenv(var)]
         if missing_vars:
             raise EnvironmentError(f"Missing environment variables: {missing_vars}")
