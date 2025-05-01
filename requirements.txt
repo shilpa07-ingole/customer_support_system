@@ -9,5 +9,8 @@ python-dotenv
 langchain_core
 langchain
 fastapi
+langchain_google_genai
+langchain.embeddings
+
 
 -e .
