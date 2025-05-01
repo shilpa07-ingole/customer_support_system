@@ -35,11 +35,7 @@ class DataIngestion:
         if missing_vars:
             raise EnvironmentError(f"Missing environment variables: {missing_vars}")
         
-        os.environ["GEMINI_API_KEY"]="AIzaSyCxczsBSI1ydYmdXfPZoQMnPuURA6RBRaE"
-        os.environ["ASTRA_DB_API_ENDPOINT"]="https://c43bb6b1-8dd1-4c48-b9fe-d78a90594b6e-us-east-2.apps.astra.datastax.com"
-        os.environ["ASTRA_DB_APPLICATION_TOKEN"]="AstraCS:PjuJqXrnuhIOlkqjIrQzGHiz:1813b04b2c2a747fa20940cc27e09850ecabcc3ee61e84ad3deeb44ca4c62862"
-        os.environ["ASTRA_DB_KEYSPACE"]="default_keyspace"
-
+        
         self.google_api_key = os.getenv("GEMINI_API_KEY")
         self.db_api_endpoint = os.getenv("ASTRA_DB_API_ENDPOINT")
         self.db_application_token = os.getenv("ASTRA_DB_APPLICATION_TOKEN")

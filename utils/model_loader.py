@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 from config.config_loader import load_config
-from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 class ModelLoader:
     """
     A utility class to load embedding models and LLM models.
@@ -28,8 +28,8 @@ class ModelLoader:
         """
         print("Loading Embedding model")
         model_name=self.config["embedding_model"]["model_name"]
-        #return GoogleGenerativeAIEmbeddings(model=model_name,GEMINI_API_KEY="AIzaSyCxczsBSI1ydYmdXfPZoQMnPuURA6RBRaE")
-        return HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
+        return GoogleGenerativeAIEmbeddings(model=model_name)
+        #return HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
 
     def load_llm(self):
         """
